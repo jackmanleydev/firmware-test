@@ -1,0 +1,6 @@
+devname="ptzoptics"
+devtype="VX630A"
+mirrors="https://firmware.ptzoptics.com/"
+versioninfo="SOC v2.0.36 - ARM 6.0.30SHIS"
+serial_num="s1i03210186"
+device_model="F53.HI"

@@ -1,0 +1,56 @@
+/*
+* Copyright 2023 Jack Manley
+* jackmanleydev@gmail.com
+*/
+
+html {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+    background-color: #26262c;
+    color: white;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+button, input {
+    margin-top: 6px;
+}
+
+.appContent {
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+}
+
+.appSection {
+    min-height: 10rem;
+}
+
+.loadingBarRadius {
+    border-radius: 24px;
+}
+
+.loadingBarContainer {
+    background-color: lightgray;
+    height: 24px;
+    margin: 30px;
+    border: 3px solid lightgray;
+}
+
+.loadingBarInner {
+    background-color: lightgreen;
+    height: 100%;
+    display: flex;
+}
+
+.loadingBarTransition {
+    transition: width .5s ease;
+}
+
+.loadingBarPercentage {
+    text-align: center;
+    padding-top: 6px;
+}

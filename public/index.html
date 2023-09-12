@@ -1,0 +1,70 @@
+<!--Copyright 2023 Jack Manley-->
+<!--jackmanleydev@gmail.com-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Update PTZOptics Firmware</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+  </head>
+  <body>
+      <div class="appContent">
+          <h1>Update PTZOptics Firmware</h1>
+
+          <div class="appSection">
+              <div id="check-for-updates-div">
+                  Get the latest firmware update here:
+                  <br />
+                  <button id="check-update-button">Check for update</button>
+              </div>
+              <div id="updates-found-div" hidden>
+                  New firmware found!
+                  <br />
+                  Current SOC: <span id="current-SOC"></span>
+                  <br />
+                  Latest SOC: <span id="latest-SOC"></span>
+                  <br />
+                  <br />
+                  Would you like to download the latest firmware and changelog files?
+                  <br />
+                  <button id="download-files">Download</button>
+                  <button id="cancel-download">Cancel</button>
+              </div>
+          </div>
+
+          <div class="appSection">
+              <div id="loading-bar-container" class="loadingBarContainer loadingBarRadius" hidden>
+                  <div id="loading-bar" class="loadingBarInner loadingBarRadius loadingBarTransition">
+                  </div>
+                  <div id="loading-percentage" class="loadingBarPercentage"></div>
+              </div>
+              <form id="upload-form" enctype="multipart/form-data">
+                  <label>
+                      Upload new firmware to begin update:
+                      <br />
+                      <input type="file" name="file" multiple>
+                  </label>
+
+                  <input type="submit" value="Upload files">
+              </form>
+              <div id="uploading" hidden>
+                  Firmware uploading... please wait.
+              </div>
+              <div id="upload-complete" hidden>
+                  Firmware upload complete. Begin firmware update:
+                  <br />
+                  <button id="update-firmware">Update</button>
+              </div>
+              <div id="updating" hidden>
+                  Firmware updating... please wait.
+              </div>
+              <div id="update-complete" hidden>
+                  Firmware update complete! Your camera will reboot momentarily.
+              </div>
+          </div>
+
+      </div>
+     
+      <script src="scripts/main.js"></script>
+  </body>
+</html>
+
